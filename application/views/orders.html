@@ -1,0 +1,40 @@
+<div data-ng-controller="orderController as controller">
+    <br>
+    <br>
+    <br>Your Order
+    <div>
+    <table class="center">
+	<tbody>
+        <tr>
+            <th>
+                
+            </th>
+        </tr>
+        <tr>
+            <th>
+                 <h1>Your orders    -             Under Construction</h1>
+
+            </th>
+        </tr>
+		<tr>
+			<td data-ng-repeat="recipe in controller.orders | orderBy:recipe.name">
+                <div align="center" style="max-width: 206px;" class="image" ng-click="$rootScope.id=recipe.name">
+                     <a href="#{{recipe.id}}" class="linkFont">
+                     <img ng-src="{{recipe.imageName}}"/><br/>
+                     <span class="caption">
+                        {{recipe.name}} <br/>
+                        {{recipe.difficulty}} <br/>
+                        {{recipe.preparationTime}} <br/>
+                        {{recipe.dateSubmitted | date:'dd/MM/yy'}} <br/>
+                     </span>        
+                     </a>
+                     <button tabindex="20" class="btn btn-primary" data-ng-click="remove()">Remove</button>
+                </div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+    <a href="#index">Back</a>
+    <hr/>
+</div>

@@ -1,0 +1,40 @@
+{
+  "name": "Orwell",
+  "version": "0.0.1",
+  "authors": [
+    "Shibu M <shibum123@gmail.com>"
+  ],
+  "description": "Online Recipe",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "http:localhost:8088/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.4.6",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.10.1",
+    "angular-aria": "~1.4.7",
+    "angular-bootstrap": "~0.14.2",
+    "angular-mocks": "~1.4.7",
+    "angular-route": "1.4.7",
+    "angular-route-segment": "~1.5.0",
+    "ngScrollSpy": "~1.0.9",
+    "string": "~3.3.0",
+    "angular-animate": "1.4.6"
+  },
+  "resolutions": {
+    "angular": "~1.4.6"
+  }
+}

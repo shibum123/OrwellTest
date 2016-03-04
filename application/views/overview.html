@@ -1,0 +1,21 @@
+<div data-ng-controller="recipeController as recipe">
+    <br>
+    <br>
+    <br>
+    <div align="center" style="max-width: 206px;" class="image" ng-click="$rootScope.id=recipe.name">
+        <a href="#{{recipe.id}}" class="linkFont">
+            <img ng-src="{{recipe.imageName}}" />
+            <br/>
+            <span class="caption">
+                {{recipe.name}} <br/>
+                {{recipe.difficulty}} <br/>
+                {{recipe.preparationTime}} <br/>
+                {{recipe.dateSubmitted | date:'dd/MM/yy'}} <br/>
+            </span>
+        </a>
+    </div>
+    <br>
+    <a href="#index">Back</a>
+    <a href="#" id="bakeIt" ng-click="setSelected(recipe)">{{recipe.selected?'Baking It!' : 'Bake It'}}</a>
+    <hr/>
+</div>

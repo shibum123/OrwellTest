@@ -1,0 +1,21 @@
+<div class="modal-header">
+  <h3 class="modal-title">{{modalOptions.headerText}}</h3>
+</div>
+<div class="modal-body">
+  <form role="form">
+    <div class="form-group">
+      <label for="name">Recipe Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="item.name">
+    </div>
+    <div class="form-group">
+      <label for="difficulty">Difficulty:</label>
+      <input type="text" class="form-control" id="difficulty" ng-model="item.difficulty">
+    </div>
+    <div class="form-group">
+      <label for="preparationTime">Preparation Time:</label>
+      <input type="text" class="form-control" id="preparationTime" ng-model="item.preparationTime">
+    </div>
+      <button class="btn btn-primary" type="button" data-ng-click="ok(item)">{{modalOptions.hideCancel ? "Ok" : "Yes"}}</button>
+      <button class="btn btn-primary" type="button" data-ng-click="cancel()" data-ng-hide="modalOptions.hideCancel">No</button>
+  </form>
+</div>
